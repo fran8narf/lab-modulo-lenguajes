@@ -1,8 +1,4 @@
-const printResults = (statement,input, result) => {
-    console.log(statement);
-    console.log('El array dado es: ', input);
-    console.log('Y el resultado del ejercicio sería', result);
-}
+import { printResults } from '../mixins/mixins.js';
 
 /** 
  * Implementa una función head (inmutable), tal que, dado un array como entrada extraiga y devuelva su primer elemento. Utiliza destructuring.
@@ -50,7 +46,8 @@ printResults(thirdStatement, thirdArray, testThird);
  */
 
 const last = (givenArray) => {
-    const lastEl = givenArray.pop();
+    const original = [...givenArray];
+    const lastEl = original.pop();
     return lastEl;
 };
 const fourthStatement = 'Implementa una función last (inmutable), tal que, dado un array como entrada devuelva el último elemento.';

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin to WIN!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="slot-machine">
+      <h1>Spin to WIN!</h1>
+      <div class="reels">
+        <div class="reel" id="leftReel">?</div>
+        <div class="reel" id="middleReel">?</div>
+        <div class="reel" id="righeReel">?</div>
+      </div>
+      <button id="playButton">Play</button>
+      <div class="message" id="message"></div>
+    </div>
+    <div class="stats">
+      <h2>Stats</h2>
+      <table>
+        <tr>
+          <th>Stat</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Total Plays</td>
+          <td id="totalPlays">0</td>
+        </tr>
+        <tr>
+          <td>Wins</td>
+          <td id="wins">0</td>
+        </tr>
+        <tr>
+          <td>Losses</td>
+          <td id="losses">0</td>
+        </tr>
+        <tr>
+          <td>Coins Lost</td>
+          <td id="coinsLost">0</td>
+        </tr>
+        <tr>
+          <td>Coins Won</td>
+          <td id="coinsWon">0</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
